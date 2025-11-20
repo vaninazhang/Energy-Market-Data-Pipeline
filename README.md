@@ -2,7 +2,7 @@
 
 A production-style data engineering project for ingesting, validating, transforming and storing hourly energy market pricing data.
 
-1. Overview
+## 1. Overview
 
 This project demonstrates a full end-to-end data engineering pipeline designed for real-world energy & financial analytics use cases.
 
@@ -10,7 +10,9 @@ The pipeline ingests hourly energy market pricing data from a public API (or CSV
 
 This architecture is similar to pipelines used in energy trading, finance, and market operations, where high-quality time-series data is mission-critical.
 
-2. Architecture
+## 2. Architecture
+
+```mermaid
 flowchart LR
     A[Public Market Data API / CSV] --> B[Airflow Scheduler]
     B --> C[Raw Zone - Azure Data Lake]
